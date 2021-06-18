@@ -2,10 +2,47 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #B4DFE5;
+/*	background-color: #B4DFE5;*/
 	font-family: 'Chakra Petch', sans-serif;
 }
 
 #main {
 	margin-top: 150px;
+}
+
+#projects {
+/*	background-color: black;
+	color: white;*/
+	margin-top: 90px;
+	height: 680px;
+}
+
+
+.carousel {
+  width:300px;
+  height:10px;
+  margin-left: 250px;
+}
+
+.col-2 {
+/*	border: 1px solid black;*/
+}
+
+.col-4 {
+/*	border: 1px dotted gray;*/
+	padding-left: 40px;
+
+}
+
+#master {
+	margin-top: 20px;
+}
+
+.navbar	{
+	background-color: white;
+	color: black;
+}
+
+.accordion {
+	background-color: #000;
 }

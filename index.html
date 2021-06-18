@@ -11,52 +11,211 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 	</head>
 	<body>
 
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col" id="main">
-					<div class="row">
-						<div class="col-8">
-							<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-							  <div class="carousel-inner">
-							    <div class="carousel-item active">
-							      <img src="https://visme.co/blog/wp-content/uploads/2016/09/website37-1024x512.jpg" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="https://visme.co/blog/wp-content/uploads/2016/09/website22-1024x512.jpg" class="d-block w-100" alt="...">
-							    </div>
-							    <div class="carousel-item">
-							      <img src="https://visme.co/blog/wp-content/uploads/2016/09/website15-1024x512.jpg" class="d-block w-100" alt="...">
-							    </div>
-							  </div>
-							  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							    <span class="sr-only">Previous</span>
-							  </a>
-							  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							    <span class="sr-only">Next</span>
-							  </a>
-							</div>
-						</div>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
 
-						<div class="col-4">
-							<h2>Therese Villanueva</h2>
-							<p>Text here</p>
+		
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-link active" href="#" >home <span class="sr-only">(current)</span></a>
+		      <a class="nav-link" href="#">about</a>
+		      <a class="nav-link" href="#">projects</a>
+		      <a class="nav-link" href="#">contact</a>
+		    	
+		    </div>
 
-							<h3>Full Stack Web Developer</h3>
-							<h3>Accountant</h3>
-						</div>
+		  </div>
+		  	<span class="navbar-text pr-2">
+		       Therese Villanueva | Portfolio
+		     </span>
+		</nav>
+
+
+		<div class="container mt-5">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" width ="160" >
+					  <div class="carousel-inner">
+					    <div class="carousel-item active" data-pause="hover" data-interval="1500">
+					    	<p class="text-center font-italic-lighter">hey there!</p>
+					    </div>
+					    <div class="carousel-item" data-pause="hover" data-interval="2000">
+					    	<p class="text-center">i'm Therese!</p>
+					    </div>
+					    <div class="carousel-item" data-pause="hover" data-interval="3000">
+					      	<p class="text-center">an accountant turned web developer</p>
+					    </div>
+					  </div>
 					</div>
+		</div>
+		<div class="container" id="master">
+			<div class="row justify-content-center">
+				<div class="col-1">
 					
-
-
+				</div>
+				<div class="col-3">
+					<div class="row justify-content-end">
+						<a role="button">
+							<img width="160" src="calculator.png">
+						</a>
+					</div>
+					<div class="row justify-content-center">
+						<img width="160" src="code.png">
+					</div>
+					<div class="row justify-content-end">
+						<img width="160" src="tech.png">
+					</div>
+				</div>
+				<div class="col-4">
+					<img width = "300" src="girl2.png">
+				</div>
+				<div class="col-3">
+					<div class="row">
+						<img width="160" src="coffee.png">
+					</div>
+					<div class="row justify-content-center pl-5">
+						<img width="160" src="thoughts.png">
+					</div>
+					<div class="row">
+						<img width="160" src="spreadsheet.png">
+					</div>
+				</div>
+				<div class="col-1">
+					
 				</div>
 			</div>
 		</div>
-		
+
+		<div class="container" id="projects">
+			<div class="row">
+				<div class="col">
+					<h1 class="mt-4 ml-3">.projects</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 d-flex">
+					<img width = "450" src="projects.png" alt="">
+				</div>
+				<div class="col-6 d-flex align-items-center">
+					<div class="accordion" id="accordionExample">
+					  <div class="card">
+					    <div class="card-header" id="headingOne">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          #001 Capstone Project - Front-end
+					        </button>
+					      </h2>
+					    </div>
+
+					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      <div class="card-body">
+					       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
+
+					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingTwo">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					           #002 Capstone Project - Back-end (MEN)
+					        </button>
+					      </h2>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					      <div class="card-body">
+					       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
+
+					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" id="headingThree">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          #003 Capstone Project - Back-end (MERN)
+					        </button>
+					      </h2>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					      <div class="card-body">
+					        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
+
+					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="container" id="about">
+			<div class="row">
+				<div class="col">
+					<h1 class="mt-4 ml-3 tex">.get to know me</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 d-flex align-items-center">
+					<div class="accordion" id="accordionExample">
+					  <div class="card">
+					    <div class="card-header" id="headingOne">
+					      <h2 class="mb-0">
+					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          #001 Capstone Project - Front-end
+					        </button>
+					      </h2>
+					    </div>
+
+					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      <div class="card-body">
+					       
+					      	<img idth="200" height="200" class="rounded-circle border" src="image.jpeg">
+					       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
+
+					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					      </div>
+					    </div>
+					</div>
+				</div>	
+				<div class="col-6 d-flex">
+					<img width = "450" src="projects.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<h1>.say hi!</h1>
+		<div class="container-fluid px-5 pb-5">
+			<div class="row d-flex justify-content-center">
+				<div class="col-12 col-md-5">
+					<form>
+					  <div class="form-group">
+					    <label for="exampleFullName1">Full Name</label>
+					    <input type="text" class="form-control" id="exampleFullName1" aria-describedby="emailHelp">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email Address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					  </div>
+					  <div class="form-group">
+					      <label for="exampleFormControlTextarea1">Message</label>
+					      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					    </div>
+					  <button type="submit" class="btn btn-white btn-block">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
 
 
 
