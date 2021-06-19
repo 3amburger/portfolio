@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/*	background-color: #B4DFE5;*/
 	font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -11,17 +10,26 @@
 }
 
 #projects {
-/*	background-color: black;
-	color: white;*/
-	margin-top: 90px;
+
+	margin-top: 30px;
 	height: 680px;
 }
 
 
-.carousel {
+#carouselOne {
   width:300px;
   height:10px;
   margin-left: 250px;
+}
+
+#carouselTwo {
+  width:500px;
+  height:10px;
+  margin-top: 200px;
+}
+
+#codingHere {
+	padding-left: 80px;
 }
 
 .col-2 {
@@ -35,7 +43,7 @@
 }
 
 #master {
-	margin-top: 20px;
+	/*margin-top: 10px*/;
 }
 
 .navbar	{
@@ -44,5 +52,134 @@
 }
 
 .accordion {
-	background-color: #000;
+	background-color: ;
 }
+
+.togglebuttons{
+	background-color: white;
+	font-size: 16px;
+	height: 40px;
+	width: 600px;
+	border: 0;
+
+}
+
+
+
+
+.card-header {
+	background-color: white;
+}
+
+
+footer {
+	border: 1 solid black;
+	height: 110px;
+	text-decoration: none;
+	color: darkgray;
+	margin-top: 60px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+}
+
+
+.row-controlled {
+	height: 20px
+}
+
+.par1 {
+	padding-right: 120px;
+	font-style: italic;
+	font-size: 12px;
+}
+.par2 {
+	padding-right: 170px;
+}
+
+.par3 {
+	padding-right: 220px;
+}
+
+.par4 {
+	padding-right: 100px;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.btn-outline-dark {
+	width: 100px;
+
+}
+
+.text-justify {
+	font-size: 13px;
+}
+
+#section2 {
+	margin-top: 70px;
+}
+
+#section3 {
+	margin-top: 70px;
+}
+
+#section4 {
+	margin-top: 70px;
+}
+
+@media (min-width: 0) {
+  .navbar-toggler {
+  background-color: white
+  }  
+
+@media (min-width: 0) {
+  .navbar-toggler-icon {
+  background-color: white
+  }  
+
+.navbar a:hover {
+  border-bottom: 1px solid white;
+}
+
+/*HOVER*/
+/*
+.coffeeText {
+	display: none;
+}
+
+.calculatorText:hover + .coffeeText {
+  display: block;
+  
+}*/
+
+
+/*.showHere {
+  display: none;
+}*/
+    
+/*.hoverHere:hover + .showHere {
+  display: block;
+  color: red;
+}*/
+
+.showHere {
+  color: white;
+  font-size: 15px;
+
+}
+    
+.hoverHere:hover + .showHere {
+  color: black
+}
+
+#coffeeTalk {
+	font-size: 13px;
+}
+
+
+
+

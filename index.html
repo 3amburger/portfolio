@@ -11,12 +11,10 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
 
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
 	</head>
 	<body>
 
-		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
 
 		
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,201 +22,369 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
-		      <a class="nav-link active" href="#" >home <span class="sr-only">(current)</span></a>
-		      <a class="nav-link" href="#">about</a>
-		      <a class="nav-link" href="#">projects</a>
-		      <a class="nav-link" href="#">contact</a>
+		      <a class="nav-link text-white" href="#" >home</a>
+		      <a class="nav-link text-white" href="#projects">projects</a>
+		      <a class="nav-link text-white" href="#firstCut">about</a>		     
+		      <a class="nav-link text-white" href="#secondCut">contact</a>
 		    	
 		    </div>
 
 		  </div>
-		  	<span class="navbar-text pr-2">
+		  	<span class="navbar-text pr-2 	d-none d-lg-block text-white">
 		       Therese Villanueva | Portfolio
-		     </span>
+		    </span>
 		</nav>
 
-
-		<div class="container mt-5">
-			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" width ="160" >
+		<div class="container">
+			<div class="row">
+				<div class="col d-lg-none">
+					<p class="text-center mt-3">Hey there, i'm Therese. An accountant-turned-developer.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-4 d-none d-lg-block">
+			<div id="carouselOne" class="carousel slide" data-ride="carousel" width ="160" >
 					  <div class="carousel-inner">
 					    <div class="carousel-item active" data-pause="hover" data-interval="1500">
 					    	<p class="text-center font-italic-lighter">hey there!</p>
 					    </div>
 					    <div class="carousel-item" data-pause="hover" data-interval="2000">
-					    	<p class="text-center">i'm Therese!</p>
+					    	<p class="text-center">i'm Therese</p>
 					    </div>
 					    <div class="carousel-item" data-pause="hover" data-interval="3000">
-					      	<p class="text-center">an accountant turned web developer</p>
+					      	<p class="text-center">an accountant-turned-web developer.</p>
+					    </div>
+					    <div class="carousel-item" data-pause="hover" data-interval="3000">
+					      	<p class="text-center">for random facts about me, </p>
+					    </div>
+					    <div class="carousel-item" data-pause="hover" data-interval="3000">
+					      	<p class="text-center">hover over these images around me</p>
 					    </div>
 					  </div>
 					</div>
 		</div>
-		<div class="container" id="master">
+
+		<!-- <div class="container">
+			<div class="row">
+				<div class="hoverHere">
+					<img width="160" src="coffee.png">
+				</div>
+			</div>
+		</div>  -->
+		
+
+		
+
+		<div class="container-fluid mt-0 mt-lg-3" id="master">
 			<div class="row justify-content-center">
-				<div class="col-1">
-					
+
+				<div class="col-4 d-none d-lg-block">
+					<div class="row d-flex flex-row-reverse justify-content-end">
+						<div class="col hoverHere ">
+							<img width="160"src="calculator.png">
+						</div>
+						<div class="col showHere d-flex align-items-center text-justify">
+							common misconception as an accountant: i'm good at math. but that's not true. 120 divided by 5? hold on, let me get my calculator for that.
+						</div>
+					</div>
+					<div class="row d-flex flex-row-reverse justify-content-start pr-5">
+						<div class="col hoverHere ">
+							<img width="160"src="code.png">
+						</div>
+						<div class="col showHere d-flex align-items-center text-justify">
+							my interest in coding started because of Friendster. yep, learning HTML as a kid so I can customize my profile.
+						</div>
+					</div>
+					<div class="row d-flex flex-row-reverse justify-content-end">
+						<div class="col hoverHere ">
+							<img width="160"src="tech.png">
+						</div>
+						<div class="col showHere d-flex align-items-center text-justify">
+							currently, my most used apps/websites are: Notion, Twitter, and Spotify
+						</div>
+					</div>
 				</div>
-				<div class="col-3">
-					<div class="row justify-content-end">
-						<a role="button">
-							<img width="160" src="calculator.png">
-						</a>
-					</div>
-					<div class="row justify-content-center">
-						<img width="160" src="code.png">
-					</div>
-					<div class="row justify-content-end">
-						<img width="160" src="tech.png">
-					</div>
-				</div>
-				<div class="col-4">
+				<div class="col-12 col-lg-4 d-flex justify-content-center hoverHere">
 					<img width = "300" src="girl2.png">
 				</div>
-				<div class="col-3">
+				<div class="col-4 d-none d-lg-block">
 					<div class="row">
-						<img width="160" src="coffee.png">
+						<div class="col hoverHere">
+							<img width="160"src="coffee.png">
+						</div>
+						<div class="col showHere d-flex align-items-center text-justify" id="coffeeTalk" >
+							my average coffee intake: 3 cups per day. my top go-to coffee drinks: Great Taste white coffee, SB white chocolate mocha, Dunkin's iced coffee, UCC instant iced coffee, TH iced coffee and any cup prepared by my mom.
+						</div>
 					</div>
 					<div class="row justify-content-center pl-5">
-						<img width="160" src="thoughts.png">
+						<div class="col hoverHere">
+							<img width="160"src="thoughts.png">
+						</div>
+						<div class="col showHere d-flex align-items-center text-justify">
+							hmmm, don't know what to put here. how about we just talk?
+						</div>
 					</div>
 					<div class="row">
-						<img width="160" src="spreadsheet.png">
+						<div class="col hoverHere">
+							<img width="160"src="spreadsheet.png">
+						</div>
+						<div class="col showHere d-flex align-items-center text-justify">
+							i <i>"spreadsheet everything"</i> 
+						</div>
 					</div>
-				</div>
-				<div class="col-1">
-					
 				</div>
 			</div>
 		</div>
 
-		<div class="container" id="projects">
+		<div class="container-fluid" id="projects">
 			<div class="row">
 				<div class="col">
-					<h1 class="mt-4 ml-3">.projects</h1>
+					<h1 id="section2" class="ml-lg-5"><u>.my projects</u></h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-6 d-flex">
-					<img width = "450" src="projects.png" alt="">
+
+				<div class="col-lg-1 d-none d-lg-block">
+					
+						<div id="carouselTwo" class="carousel slide carousel-fade" data-ride="carousel" width ="160" >
+								  <div class="carousel-inner">
+								    <div class="carousel-item active" data-pause="hover" data-interval="2000">
+								    	<p class="text-right font-italic-lighter">hey there!</p>
+								    </div>
+								    <div class="carousel-item" data-pause="hover" data-interval="2000">
+								    	<p class="text-left pl-5">feel free to look around</p>
+								    </div>
+								    <div class="carousel-item" data-pause="hover" data-interval="800">
+								      	<!-- <p class="text-right">i'll just code here</p> -->
+								    </div>
+								    <div class="carousel-item" data-pause="hover" data-interval="2000">
+								      	<p id = "codingHere" class="text-left">i'll just code here</p>
+								    </div>
+								    <div class="carousel-item" data-pause="hover" data-interval="1000">
+								      	<!-- <p class="text-right">i'll just code here</p> -->
+								    </div>
+								  </div>
+								</div>
+					
 				</div>
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-12 col-lg-4 d-none d-lg-block">
+					<img width = "400" src="projects2.png" alt="">
+				</div>
+			<!-- 	<div class="col 1">
+					
+				</div> -->
+				<div id="accordionOne" class="col-12 col-lg-6">
 					<div class="accordion" id="accordionExample">
 					  <div class="card">
 					    <div class="card-header" id="headingOne">
 					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          #001 Capstone Project - Front-end
+					        <button class="togglebuttons text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					          #001 Capstone Project: Front-end
 					        </button>
 					      </h2>
 					    </div>
 
-					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-					      <div class="card-body">
-					       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
+					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      <div class="card-body bg-dark text-white">
+					       <p>This project was created after taking sessions on HTML and CSS programming language, along with the application of various developer tools like Git and Bootstrap. </p>
 
-					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					       	<p> Main tool and/or feature used: Bootstrap and its Grid System.</p>
+
+					       Fancy a preview? Well, look no further because it is exactly this web page! 
 					      </div>
 					    </div>
 					  </div>
 					  <div class="card">
 					    <div class="card-header" id="headingTwo">
 					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					           #002 Capstone Project - Back-end (MEN)
+					        <button class="togglebuttons text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					           #002 Capstone Project: Back-end (MEN)
 					        </button>
 					      </h2>
 					    </div>
 					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-					      <div class="card-body">
-					       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
-
-					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					      <div class="card-body bg-dark text-white">
+					      	Coming soon...
 					      </div>
 					    </div>
 					  </div>
 					  <div class="card">
 					    <div class="card-header" id="headingThree">
 					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          #003 Capstone Project - Back-end (MERN)
+					        <button class="togglebuttons text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          #003 Capstone Project: Back-end (MERN)
+					        
 					        </button>
 					      </h2>
 					    </div>
 					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-					      <div class="card-body">
-					        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
-
-					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
+					      <div class="card-body  bg-dark text-white">
+					        Coming soon...
 					      </div>
 					    </div>
 					  </div>
+
+
 					</div>
+				</div>
+				<div class="col-1">
+					
 				</div>
 			</div>
 		</div>
 
+		<hr id="firstCut">
 
-
+		<div class="col">
+			<h1 id="section3" class="ml-lg-5"><u>.get to know me</u></h1>
+			<h6 class="ml-lg-5"> (and what i've been up to for the past 25 years of my existence) </h6>
+		</div>
 		<div class="container" id="about">
 			<div class="row">
-				<div class="col">
-					<h1 class="mt-4 ml-3 tex">.get to know me</h1>
+				<div class="col d-flex justify-content-center mt-4">
+					<img width="120" height="120" class="rounded-circle border" src="image.jpeg">
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-6 d-flex align-items-center">
-					<div class="accordion" id="accordionExample">
-					  <div class="card">
-					    <div class="card-header" id="headingOne">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          #001 Capstone Project - Front-end
-					        </button>
-					      </h2>
-					    </div>
+			<div class="row d-flex flex-column-reverse justify-content-center flex-lg-row pt-4">
+				<div class="col-12 col-lg-6">
+					<p class="text-justify"> I'm currently taking up a Full-Stack Web Developer Program at Zuitt, the No. 1 Coding Bootcamp in the Philippines, and working for the following programming languages under my belt: HTML, CSS, Javascript, MERN (MongoDB, Express.JS, React.JS, Node.JS), along with other various developer tools and frameworks, like Git and Bootstrap.
+					 </p>
+				</div>
+				<div class="col-12 col-lg-6 d-flex align-items-center justify-content-end pb-4">
+					<h3><<2021:</h3> <h3 class="text-white bg-dark ml-3 px-2">from consulting to coding</h3>
+				</div>
+			</div>
 
-					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-					      <div class="card-body">
-					       
-					      	<img idth="200" height="200" class="rounded-circle border" src="image.jpeg">
-					       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo eos, illum similique ullam adipisci ratione culpa deserunt sapiente doloremque quae hic, praesentium saepe porro cumque assumenda dolore, aperiam ea!
+			<div class="row d-flex flex-column justify-content-center flex-lg-row">
+				<div class="col-12 col-lg-6  d-flex align-items-center">
+					<h3>2019-2020:</h3> <h3 class="text-white bg-dark ml-3 px-2"> consulting >></h3>
+				</div>
+				<div class="col-12 col-lg-6">
+					<p class="text-justify">In 2019, I started my consulting career as part of the Finance team that's spearheading the accounting system migration for ING Bank, N.V., a Dutch multinational banking institution that launched the first all-digital bank here in the Philippines. Other responsibilities handled include regulatory reporting for the Central Bank of the Philippines.
+					 </p>
 
-					       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, delectus ducimus maxime placeat, consequuntur maiores dolorum a. Illo, aliquid rem. Laboriosam quis molestiae, eos, ducimus voluptatibus fuga tenetur aliquid quod.
-					      </div>
-					    </div>
-					</div>
-				</div>	
-				<div class="col-6 d-flex">
-					<img width = "450" src="projects.png" alt="">
+					 <p class="text-justify">In 2020, after my one-year stint at ING Bank, N.V, I joined Pru Life UK's project team that's leading the implementation of the new International Financial Reporting Standards for insurance companies as an outsourced consultant. A couple of months later, I was asked to join their team as a full-time consultant. I stayed with the team until I decided for a career shift in the mid-part of 2021.  
+					 </p>
+
+
+
+				</div>
+			</div>
+			<div class="row d-flex flex-column-reverse justify-content-center flex-lg-row">
+				<div class="col-12 col-lg-6">
+					<p class="text-justify">Right after earning my certification as a Certified Public Accountant in 2016, I joined Punongbayan & Araullo, one of the leading accounting firms here in the Philippines, as an Audit Associate. During my three-year stay with the Firm, I have worked my way up and have held three postions, with the Audit Supervisor role as the highest attained. Aside from the meaningful professional experience gained during my 3-year career as an auditor, I would also say that this is when I learned most of my 'adulting' firsts, while also gaining meaningful personal experiences and relationships with colleagues.
+					 </p>
+				</div>
+				<div class="col-12 col-lg-6  d-flex align-items-center justify-content-end">
+					<h3><<2016-2019: </h3> <h3 class="text-white bg-dark ml-3 px-2"> auditing x adulting</h3>
+				</div>
+			</div>
+			<div class="row d-flex flex-column justify-content-center flex-lg-row">
+				<div class="col-12 col-lg-6  d-flex align-items-center">
+					<h3>2012-2016:</h3> <h3 class="text-white bg-dark ml-3 px-2"> college >></h3>
+				</div>
+				<div class="col-12 col-lg-6 ">
+					<p class="text-justify"> I took up BS Accountancy at Polytechnic University of the Philippines and then took the CPA Licensure Exam five months after graduation.
+					 </p>
+
+					 <p class="text-justify"> Staying for four years at a state university here in the Philippines has opened my eyes to the (sometimes harsh) realities of life. I would say that this is the period when I started envisioning and building my dreams that's even bigger than myself.
+					 </p>
+				</div>
+			</div>
+			<div class="row d-flex flex-column-reverse justify-content-center flex-lg-row">
+				<div class="col-12 col-lg-6 ">
+					<p class="text-justify"> Before college. Ahh, what I would give to go back to these days. When I didn't have a care in the world, and everything is mostly fun and games. I remember that most of my childhood days were spent playing (jackstone, beyblade, b-daman, yu-gi-oh cards, marapets, neopets, habbo, pogs, teks, piko, patintero, and even in the rain. You name it, I think I have played most of them). This is also the time when I started discovering the wonders of coding and web development. All while trying to figure out the best layout for my Friendster profile through HTML.
+					 </p>
+				</div>
+				<div class="col-12 col-lg-6  d-flex align-items-center justify-content-end">
+					<h3><<2011 B.C.</h3> <h3 class="d-none d-lg-block">(before college):</h3> <h3 class="text-white bg-dark ml-3 px-2"> having fun</h3>
 				</div>
 			</div>
 		</div>
 
-		<h1>.say hi!</h1>
-		<div class="container-fluid px-5 pb-5">
-			<div class="row d-flex justify-content-center">
-				<div class="col-12 col-md-5">
-					<form>
-					  <div class="form-group">
-					    <label for="exampleFullName1">Full Name</label>
-					    <input type="text" class="form-control" id="exampleFullName1" aria-describedby="emailHelp">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Email Address</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					  </div>
-					  <div class="form-group">
-					      <label for="exampleFormControlTextarea1">Message</label>
-					      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-					    </div>
-					  <button type="submit" class="btn btn-white btn-block">Send</button>
-					</form>
-				</div>
+	<hr id="secondCut">
+
+	<div class="col">
+		<h1 id="section4" class="ml-lg-5"><u>.let's be friends</u></h1>
+	</div>
+	<div class="container">
+
+		<div class="row row-controlled mt-3">
+			<div class="col-6 d-none d-lg-block">
+				<p class= "par1 text-right">say hi here</p>
+			</div>
+			<div class="col-6">
+				<!-- <p class="text-right pr-5">	..or maybe even send me pizza?</p> -->
 			</div>
 		</div>
+		<div class="row row-controlled">
+			<div class="col-6 d-none d-lg-block">
+				<p class="par2 text-right">/</p>
+			</div>
+			<div class="col-6">
+				<!-- <p class="text-right par3">/</p> -->
+			</div>
+
+		</div>
+		<div class="row">
+<!-- 			<div class="col-1">
+				
+			</div> -->
+			<div class="col-12 col-lg-6" >
+				<form id="form-contact">
+				  <div class="form-group">
+				    <label for="exampleFullName1">what should i call you?</label>
+				    <input type="text" class="form-control" id="exampleFullName1" aria-describedby="emailHelp" placeholder = "your name here" >
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">how do i reach you?</label>
+				    <input placeholder = "your e-mail here" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				  </div>
+				  <div class="form-group">
+				      <label for="exampleFormControlTextarea1">let me know that you were here!</label>
+				      <textarea placeholder = "your message here" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				    </div>
+				  <button type="submit" class="btn btn-success btn-block btn-dark">send!</button>
+				</form>
+			</div>
+			<div class="col-6 d-none d-lg-block">
+				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.197697925446!2d121.12631851483607!3d14.241686690031903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd62610c3a1d63%3A0xc6f7eb9261dbd3ec!2sArabella%20Homes%20Rd%2C%20Cabuyao%2C%20Laguna!5e0!3m2!1sen!2sph!4v1624067168810!5m2!1sen!2sph" width="500" height="340" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				
+			</div>
+<!-- 			<div class="col-1">
+				
+			</div> -->
+		</div>
+		<div class="row row-controlled">
+			<div class="col-6">
+				<!-- <p class= "pl-5">say hi!</p> -->
+			</div>
+			<div class="col-6 d-none d-lg-block">
+				<p class="par3 text-right">\</p>
+			</div>
+		</div>
+		<div class="row row-controlled">
+			
+			<div class="col-6">
+				<!-- <p class="text-right par3">/</p> -->
+			</div>
+			
+			<div class="col-6 d-none d-lg-block">
+				<p class="text-right par4">	..or maybe even send me some pizza?</p>
+			</div>
+
+		</div>
+	</div>
 
 
+		<footer class="border">
+			
+			<p class="text-center pt-4">	If you've reached this far, you're awesome! Hope you enjoyed browsing through this page as much as I enjoyed creating it. </p>
 
+			<p class="text-center"> &#169 2021 Therese Villanueva | All Rights Reserved.</p>
+			
+
+		</footer>
 		
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
